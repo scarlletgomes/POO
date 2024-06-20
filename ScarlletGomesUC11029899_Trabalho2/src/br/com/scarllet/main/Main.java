@@ -1,18 +1,24 @@
-//Scarllet Gomes Rodrigues UC11029899
-
 package br.com.scarllet.main;
 
-import br.com.scarllet.nota.impl.MatematicaDiscreta;
+import br.com.scarllet.notas.impl.Disciplina;
+import br.com.scarllet.notas.impl.Matematica;
+import br.com.scarllet.notas.impl.Poo;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		MatematicaDiscreta oMatematicaDiscreta = new MatematicaDiscreta(0, 25, "Matematica", 8, 0);
+		Disciplina oDisciplina = new Disciplina("Português", 18);
+		oDisciplina.calculoNotas(6, 7, 9);
+		oDisciplina.aprovacao(18);
 		
-		oMatematicaDiscreta.aprovacao();
-		oMatematicaDiscreta.calculoNota(0, 0);
+		Poo oPoo = new Poo("Poo", 20);
+		oPoo.calculoNotas(6, 7, 9);
+		oPoo.aprovacao(20);	
+		
+		Matematica oMatematica = new Matematica("Matematica", 18);
+		oMatematica.calculoNotas(6, 6, 6);
+		oMatematica.aprovacao(18);
+
 	}
 
 }
